@@ -33,9 +33,9 @@ public class C20TypeConversion {
 
     // char는 int 이상에 할당 가능
 
-    char s='힣';
-    int t= s;
-//     short u =s;
-    short v= 33;
-    int w=
+    char s = '힣';
+    int t = s;
+    //     short u =s;
+    short v = 33;
+    int w = 33;
 }

@@ -23,8 +23,8 @@ public class C19Var {
         // 실수형 literal 은 double
         var j = 3.14;
 
-        List<Map<String, Integer>> list = new ArrayList<Map<String, Integer>>();
-        List<Map<String, Integer>> list = new ArrayList<Map<String, Integer>>();
+        //List<Map<String, Integer>> list = new ArrayList<Map<String, Integer>>();
+        //List<Map<String, Integer>> list = new ArrayList<Map<String, Integer>>();
 
 
     }
