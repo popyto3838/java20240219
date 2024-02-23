@@ -31,10 +31,10 @@ public class ConditionalOperationExample {
                 total += scores[i][j];
             }
             double average = total / 3.0;
-            System.out.println()(i+1)+"번학생의 총점은 "+ total+ ",평균은"+average);
+            System.out.println((i + 1) + "번학생의 총점은 " + total + ",평균은" + average);
         }
-        }
-
-
     }
+
+
 }
+
