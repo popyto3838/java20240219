@@ -2,6 +2,7 @@ package ch05.lecture.p1array;
 
 public class C08Array {
 
+
     public static void main(String[] args) {
 
         int[] arr = new int[]{7, 1, 3, 10, 8, 9, 2, 3};
