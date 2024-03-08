@@ -40,6 +40,7 @@ class Gun extends Weapon {
 class Hero {
     private Weapon weapon;
 
+
     public void setWeapon(Weapon weapon) {
         this.weapon = weapon;
     }
