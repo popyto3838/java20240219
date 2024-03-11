@@ -13,6 +13,7 @@ public class C03Sample {
     }
 
     public static void printDescription(Object o) {
+
         System.out.println(o.toString());
     }
 }
