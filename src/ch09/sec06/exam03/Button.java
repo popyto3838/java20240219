@@ -1,21 +1,17 @@
 package ch09.sec06.exam03;
 
 public class Button {
-
-    public static interface CliListener {
+    public static interface ClickListener {
         void onClick();
     }
 
+    private ClickListener clickListener;
 
-    private CliListener cliListener;
-
-    public void setClickListener(CliListener cliListener) {
-        this.cliListener = cliListener;
-
+    public void setClickListener(ClickListener clickListener) {
+        this.clickListener = clickListener;
     }
 
     public void click() {
-        this.cliListener.onClick();
+        this.clickListener.onClick();
     }
-
 }

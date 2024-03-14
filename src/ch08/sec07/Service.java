@@ -1,35 +1,33 @@
 package ch08.sec07;
 
 public interface Service {
-    default void defaultmethod1() {
-        System.out.println("defaultMethod1 종속 코드");
+    default void defaultMethod1() {
+        System.out.println("Service.defaultMethod1");
         defaultCommon();
-
     }
 
-    default void defaultmethod2() {
-        System.out.println("defaultMethod2 종속 코드");
+    default void defaultMethod2() {
+        System.out.println("Service.defaultMethod2");
         defaultCommon();
-
     }
 
     private void defaultCommon() {
-        System.out.println("defaultMethod1 중복 코드A");
-        System.out.println("defaultMethod1 중복 코드B");
+        //중복코
+        System.out.println("Service.defaultCommon");
     }
 
-    static void staticMethod1() {
-        System.out.println("staticMethod1 종속 코드");
+    public static void staticMethod1() {
+        System.out.println("Service.staticMethod1");
         staticCommon();
     }
 
-    static void staticMethod2() {
-        System.out.println("staticMethod2 종속 코드");
+    public static void staticMethod2() {
+        System.out.println("Service.staticMethod2");
         staticCommon();
     }
 
     private static void staticCommon() {
-        System.out.println("staticMethod 중복 코드C");
-        System.out.println("staticMethod 중복 코드D");
+        // 중복
+        System.out.println("Service.staticCommon");
     }
 }

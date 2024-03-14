@@ -1,9 +1,16 @@
 package example;
 
 public class Member {
+    private String id;
+    private String name;
 
-    String name;
-    String id;
-    String password;
-    int age;
+    public Member(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return id + ":" + name;
+    }
 }

@@ -6,16 +6,22 @@ public class InstanceofExample {
         Bus bus = new Bus();
 
         ride(taxi);
-        System.out.println();
+
         ride(bus);
     }
 
     public static void ride(Vehicle vehicle) {
+
+//        if (vehicle instanceof Bus) {
+//            Bus bus = (Bus) vehicle;
+//            bus.checkFare(); //
+//        }
+
         if (vehicle instanceof Bus bus) {
-            bus.checkFare();
+            bus.checkFare(); //
         }
+
         vehicle.run();
-
     }
-
 }
+

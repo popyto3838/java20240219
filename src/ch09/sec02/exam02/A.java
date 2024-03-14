@@ -2,22 +2,23 @@ package ch09.sec02.exam02;
 
 public class A {
     class B {
+        // 필드
         int field1 = 1;
         static int field2 = 2;
 
+        // 생성자
         B() {
-            System.out.println("B생성자 실행");
+            System.out.println("B.B");
         }
 
+        // 메소드
         void method1() {
-            System.out.println("B-metod1 실행");
+            System.out.println("B.method1");
         }
 
         static void method2() {
-            System.out.println("B-method2 실행");
+            System.out.println("B.method2");
         }
-
-
     }
 
     void useB() {
@@ -26,7 +27,6 @@ public class A {
         b.method1();
 
         System.out.println(B.field2);
-        b.method2();
-
+        B.method2();
     }
 }
