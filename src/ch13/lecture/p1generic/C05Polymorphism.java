@@ -8,14 +8,13 @@ public class C05Polymorphism {
 
         box1.someMethod();
         box2.someMethod();
-
+        box3.someMethod();
     }
 }
 
-
+// 제한된 타입파라미터
 class C05Box<T extends Number> {
     private T item;
-
 
     public void someMethod() {
         item.intValue();
