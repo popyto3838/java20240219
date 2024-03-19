@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 //같은숫자는싫어
+//
+//입출력 예
+//arr	answer
+//[1,1,3,3,0,1,1]	[1,3,0,1]
+//        [4,4,4,3,3]	[4,3]
+
+
 public class Solution6 {
 
     public int[] solution(int[] arr) {

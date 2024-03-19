@@ -3,13 +3,16 @@ package example;
 import java.util.ArrayList;
 import java.util.List;
 
-//
+//ㅈ스칼의 삼각형
+
 public class Solution5 {
+
+
     public List<Integer> getRow(int rowIndex) {
         List<Integer> prev = new ArrayList<>();
         prev.add(1);
 
-        for (int i = 1; i <= rowIndex; i++) {
+        for (int i = 1; i < rowIndex; i++) {
             List<Integer> next = new ArrayList<>();
             next.add(1);
             for (int n = 1; n < prev.size(); n++) {
@@ -19,9 +22,12 @@ public class Solution5 {
             next.add(1);
 
             prev = next;
+
+
         }
         return prev;
     }
+
 }
 
 //
