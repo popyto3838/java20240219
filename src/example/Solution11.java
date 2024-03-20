@@ -68,3 +68,6 @@ public class Solution11 {
 //
 //        return sut.size();
 //
+
+// ArrayList, HashSet, HashMap, Stack, Queue, LinkedList ;;
+//        1748, 1512 , 2006, 2206, 2363
