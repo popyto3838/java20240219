@@ -11,12 +11,15 @@ public class C01Stack {
         stack.push("spring");
         stack.push("css");
 
+        System.out.println(stack.size());
 
         String item1 = stack.pop();  //css
         String item2 = stack.pop();  //spring
         String item3 = stack.pop();  //react
         String item4 = stack.pop();  //java
 
+        System.out.println(stack.size());
+        
         System.out.println(item1);
         System.out.println(item2);
         System.out.println(item3);
