@@ -19,6 +19,7 @@ public class Solution12 {
             }
         }
 
+
         int result = 0;
         var entries = map.entrySet();
         for (Map.Entry<Integer, Integer> entry : entries) {
@@ -32,12 +33,7 @@ public class Solution12 {
 
     }
 
-    public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 2};
-        Solution12 solu = new Solution12();
-        solu.sumOfUnique(nums);
-        
-    }
+
 }
 
 

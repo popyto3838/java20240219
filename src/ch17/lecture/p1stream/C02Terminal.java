@@ -35,6 +35,5 @@ public class C02Terminal {
         Optional<Integer> min = list.stream()
                 .min((a, b) -> a - b);
         System.out.println("min = " + min);
-
     }
 }
