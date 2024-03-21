@@ -5,6 +5,8 @@ package example;
 //Given an integer array nums, return the third distinct maximum number in this array. If the third maximum does not exist, return the maximum number.
 //input nums =[3,2,1]
 //output : 1
+//input nums =[1,2]
+//output : 2
 
 import java.util.TreeSet;
 
