@@ -2,11 +2,11 @@ package ch17.sec11;
 
 public class Student {
     private String name;
-    private int Score;
+    private int score;
 
     public Student(String name, int score) {
         this.name = name;
-        Score = score;
+        this.score = score;
     }
 
     public String getName() {
@@ -14,6 +14,6 @@ public class Student {
     }
 
     public int getScore() {
-        return Score;
+        return score;
     }
 }

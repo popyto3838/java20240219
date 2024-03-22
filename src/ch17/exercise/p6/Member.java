@@ -1,4 +1,4 @@
-package ch17.exercise.p5;
+package ch17.exercise.p6;
 
 public class Member {
     private String name;
@@ -13,15 +13,7 @@ public class Member {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getAge() {
         return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 }
