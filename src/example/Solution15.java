@@ -8,16 +8,23 @@ import java.util.HashMap;
 
 
 public class Solution15 {
-    public int numIdenticalPairs(int[] nums) {
+    public static int numIdenticalPairs(int[] nums) {
+
         int count = 0;
+
         HashMap<Integer, Integer> map = new HashMap<>();
+
+        int i = 0;
         for (int num : nums) {
             if (map.containsKey(num)) {
                 count += map.get(num);
             }
             map.put(num, map.getOrDefault(num, 0) + 1);
+            i++;
+
         }
         return count;
+
     }
 
 
@@ -74,7 +81,7 @@ public class Solution15 {
 //4. 각 단계별 변화:
 //
 //    단계	count	map
-//    초기화	0	{}
+//    초기화	        0  	{}
 //    첫 번째 반복	0	{1=1}
 //    두 번째 반복	0	{1=1, 2=1}
 //    세 번째 반복	0	{1=1, 2=1, 3=1}
