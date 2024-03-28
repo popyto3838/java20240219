@@ -8,14 +8,13 @@ public class C02File {
         String path = "temp/output99.txt";
         File file = new File(path);
 
-        System.out.println("file.exists()=" + file.exists());
+        System.out.println("file.exists() = " + file.exists()); // false
 
         if (!file.exists()) {
             file.createNewFile();
-
         }
 
-        System.out.println("file.exists()=" + file.exists());
+        System.out.println("file.exists() = " + file.exists()); // true
 
     }
 }

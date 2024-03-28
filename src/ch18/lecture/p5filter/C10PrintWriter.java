@@ -10,12 +10,12 @@ public class C10PrintWriter {
         FileWriter fw = new FileWriter(file);
         PrintWriter pw = new PrintWriter(fw);
 
-
         pw.print("hello world");
-        pw.print("😂😊🤣");
-        pw.println("점심뭐먹지?");
-        pw.println("배고프다");
-        pw.println("%s을 먹을까?");
+        pw.print("🎉😭🤣");
+        pw.println();
+        pw.println("점심 뭐먹지??");
+        pw.println("배고프다.");
+        pw.printf("%s을 먹을까? %s를 먹을까?%n", "라면", "돈까스");
 
         pw.close();
     }

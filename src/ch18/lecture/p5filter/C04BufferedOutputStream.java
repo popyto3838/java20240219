@@ -11,13 +11,18 @@ public class C04BufferedOutputStream {
         OutputStream os = new FileOutputStream(fileName);
         BufferedOutputStream bos = new BufferedOutputStream(os);
 
-        byte[] data = new byte[1024];
+        byte[] data = new byte[10];
 
-        for (int i = 0; i < (1024 * 1024); i++) {
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < (1024 * 1024 * 100); i++) {
             bos.write(data);
         }
         bos.flush();
         bos.close();
+
+        long end = System.currentTimeMillis();
+        long time = end - start;
+        System.out.println("time = " + time);
 
     }
 }

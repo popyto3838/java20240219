@@ -6,24 +6,21 @@ import java.io.OutputStream;
 
 public class C03BufferedOutputStream {
     public static void main(String[] args) throws IOException {
-
         String file1 = "temp/bigfile/output1.data";
         OutputStream os = new FileOutputStream(file1);
 
-        byte[] data = new byte[1024];
+        byte[] data = new byte[10];
 
-        long start = System.nanoTime();
-        for (int i = 0; i < (1024 * 1024); i++) {
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < (1024 * 1024 * 100); i++) {
             os.write(data);
         }
         os.flush();
         os.close();
 
-        long end = System.nanoTime();
+        long end = System.currentTimeMillis();
         long time = end - start;
-        System.out.println("time=" + time);
-
+        System.out.println("time = " + time);
 
     }
-
 }
