@@ -1,17 +1,16 @@
-package ch14.exercise;
+package ch14.exercise.p2;
 
-public class MovieThread implements Runnable {
-
-
+public class MusicRunnable implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 3; i++) {
-            System.out.println("동영상을 재생합니다");
+
+            System.out.println("음악을 재생합니다.");
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
-
         }
     }
 }
